@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#292929"><meta name="description" content="A designer’s opening. 디자인, 취향, 실험을 탐색하는 인터랙티브 3D 포트폴리오."><title>OPENING — A designer’s perspective</title><link rel="stylesheet" href="style.css?v=98"><link rel="stylesheet" href="design-gallery.css?v=31"><script type="importmap">{"imports":{"three":"./vendor/three.module.js"}}</script></head>
+<body data-view="board" data-opening="intro">
+<div class="grain" aria-hidden="true"></div>
+<header class="header"><a href="#" class="wordmark" id="home" aria-label="체스판 처음 화면">opening<span>®</span></a><span class="header-note">A DESIGNER’S PERSPECTIVE</span><button class="index-button" id="index-toggle" aria-expanded="false" aria-controls="index-menu">Index <span>＋</span></button></header>
+<main>
+<button id="opening-gate" aria-label="체스판 보기"><span>every <em>move</em><br>has a meaning</span></button>
+<section class="world" aria-label="인터랙티브 체스 포트폴리오"><div id="canvas-container"></div><span id="contact-unlocked-marker" hidden aria-hidden="true"><svg viewBox="0 0 28 24" fill="currentColor"><path d="M3 4h22L14 21Z"/></svg></span><div id="piece-controls" aria-label="선택 가능한 체스말 4개"></div>
+<div class="intro" id="intro"><p class="micro">PORTFOLIO — VOL. 01</p><h1>Every move<br>has a <em>meaning.</em></h1><p class="intro-sub">생각을 움직이고, 새로운 장면을 만듭니다.</p></div>
+<div class="board-note" id="board-note"><span class="tiny-cross">＋</span><p>THE ITALIAN GAME</p><span>Seven pieces. Three perspectives.</span></div>
+<div class="board-instruction" id="board-instruction"><span class="pulse-dot"></span><span>표시된 말을 선택해 탐색하세요</span><span class="instruction-rule"></span><span class="micro">01 / SELECT A PIECE</span></div>
+<div class="focus-copy" id="focus-copy" hidden><p class="micro" id="focus-kicker"></p><h2 id="focus-title"><button id="title-link" type="button" aria-label="컬렉션으로 이동"></button></h2><p id="focus-description"></p><button id="enter-button" class="text-link">Explore collection <span>↗</span></button><span class="focus-hint">말을 다시 누르면 입장 · 빈 배경을 누르면 돌아가기</span></div>
+<button class="back-button" id="back-button" hidden><span>뒤로가기</span></button>
+<div class="focus-meta" id="focus-meta" hidden><span id="piece-name"></span><span>FORM / PERSPECTIVE / POSSIBILITY</span></div>
+<div class="loading" id="loading"><span class="loading-icon">♟</span><span class="micro">SETTING THE OPENING</span></div>
+<div class="fallback" id="fallback" hidden><h2>Explore the collection.</h2><p>이 브라우저에서 3D 화면을 표시할 수 없습니다.<br>아래에서 각 컬렉션을 열 수 있습니다.</p><button data-route="design">School project ↗</button><button data-route="taste">Taste archive ↗</button><button data-route="experiment">Experiment ↗</button></div>
+</section>
+<section id="collection" class="collection" hidden tabindex="-1"><header class="collection-opening-header"><button id="collection-opening" aria-label="확대된 체스보드로 돌아가기">opening.</button></header><div class="collection-heading"><p class="micro" id="collection-kicker"></p><h1 id="collection-title"></h1><p id="collection-description"></p></div><div class="collection-grid" id="collection-grid"></div><div class="collection-end"><span>다음 장면은, 또 다른 움직임에서.</span><button id="collection-back" class="text-link">Return to the board ↗</button></div><p class="placeholder-note">CONCEPT PORTFOLIO · 현재 작업물은 전시 구성을 위한 예시입니다.</p></section>
+</main>
+<section id="contact-screen" hidden tabindex="-1" aria-label="Contact"><button id="contact-home" aria-label="확대된 체스보드로 돌아가기">opening.</button><div><a href="mailto:hy66004405@gmail.com">hy66004405@gmail.com</a><p>Please wait for update.</p></div></section>
+<aside id="theme-tools" hidden aria-label="테마 조절">
+<button id="theme-toggle" type="button" aria-label="테마 목록 열기" aria-expanded="false" aria-controls="theme-panel"><svg viewBox="0 0 80 112" fill="currentColor" aria-hidden="true"><circle cx="40" cy="21" r="13"/><path d="M28 39h24l3 9H25zM31 52h18c0 16 3 27 12 35H19c9-8 12-19 12-35ZM18 91h44l6 11H12z"/></svg></button>
+<div id="theme-panel" hidden aria-label="폰 테마 목록"><svg class="theme-arc-surface" viewBox="0 0 300 460" preserveAspectRatio="none" aria-hidden="true"><defs><filter id="theme-outer-glow" x="-50%" y="-30%" width="200%" height="160%" color-interpolation-filters="sRGB"><feGaussianBlur in="SourceAlpha" stdDeviation="8" result="blur"/><feComposite in="blur" in2="SourceAlpha" operator="out" result="outside"/><feFlood flood-color="#baffdf" flood-opacity="0.65"/><feComposite in2="outside" operator="in"/></filter></defs><path class="theme-glow-only" d="M181 2 A370 370 0 0 1 181 458 A80 80 0 0 1 55 359 A210 210 0 0 0 55 101 A80 80 0 0 1 181 2 Z" filter="url(#theme-outer-glow)"/><path d="M181 2 A370 370 0 0 1 181 458 A80 80 0 0 1 55 359 A210 210 0 0 0 55 101 A80 80 0 0 1 181 2 Z"/></svg><div class="theme-wheel-items"><button type="button" data-theme-choice="original" aria-pressed="false" style="--item-angle:-28deg"><span>00</span> Original </button><button type="button" data-theme-choice="wire" aria-pressed="false" style="--item-angle:-14deg"><span>01</span> Wireframe </button><button type="button" data-theme-choice="mood-2" aria-pressed="false" style="--item-angle:0deg"><span>02</span> sketchbook </button><button type="button" data-theme-choice="mood-3" aria-pressed="false" style="--item-angle:14deg"><span>03</span> Pixel </button><button type="button" data-theme-choice="mood-4" aria-pressed="false" style="--item-angle:28deg"><span>04</span> Water </button></div></div>
+</aside>
+<footer class="footer" id="footer"><span>INDEPENDENT DESIGNER<br><span class="muted">BASED IN SEOUL, KR</span></span><div class="legend"><span>♟ <span>School project</span></span><span>♝ <span>Taste archive</span></span><span>♞ <span>Experiment</span></span></div><span class="edition">SELECTED WORKS<br><span class="muted">2024 — 2026</span></span></footer>
+<aside id="index-menu" class="index-menu" hidden><p class="micro">THREE PERSPECTIVES</p><button data-select="pawn"><span>01</span> School project <i>↗</i></button><button data-select="bishop"><span>02</span> Taste archive <i>↗</i></button><button data-select="knight"><span>03</span> Experiment <i>↗</i></button><p>체스말을 통해 서로 다른 관점을 만나보세요.</p></aside>
+<dialog id="detail"><button id="detail-close" aria-label="프로젝트 닫기">Close ×</button><div id="detail-content"></div></dialog>
+<div id="announcement" role="status" aria-live="polite" class="sr-only"></div>
+<noscript><div class="fallback">이 인터랙티브 포트폴리오는 JavaScript가 필요합니다.</div></noscript>
+<script>
+const loadingStart=performance.now();
+const runtime=document.createElement('span');runtime.className='loading-time';runtime.textContent='0.0s';document.querySelector('#loading').append(runtime);
+const loadingTimer=setInterval(()=>runtime.textContent=((performance.now()-loadingStart)/1000).toFixed(1)+'s elapsed',100);
+window.setLoadingStage=text=>document.querySelector('#loading .micro').textContent=text;
+window.finishLoading=()=>{clearInterval(loadingTimer);document.body.dataset.loadSeconds=((performance.now()-loadingStart)/1000).toFixed(2)};
+</script>
+<script type="module">
+import('./app.js?v=121').catch(error=>{console.error(error);window.finishLoading();document.querySelector('#loading').hidden=true;document.querySelector('#fallback').hidden=false;document.querySelector('#fallback p').textContent='3D 파일을 불러오지 못했습니다. 페이지를 새로고침해 주세요.';document.querySelectorAll('[data-route]').forEach(b=>b.onclick=()=>location.reload());});
+</script>
+</body></html>
